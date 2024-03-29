@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Furniture Warehouse{% endblock %}</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'main_app/img/Favicon.jpg' %}">
+    <link rel="stylesheet" href="{% static 'main_app/css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+     
+        <nav class="mb-4">
+            <a id="home" class="btn btn-primary" href="{% url 'home' %}">Home</a>
+            <a id="showroom" class="btn btn-primary" href="{% url 'showroom' %}">Showroom</a>
+            <a id="about" class="btn btn-primary" href="{% url 'about' %}">About</a>
+            <a id="contact" class="btn btn-primary" href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </div>
+    <main>
+      {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+      <p>&copy; 2023 Cosmos Furniture Warehouse. All rights reserved.</p>
+  </footer>
+</body>
+</html>

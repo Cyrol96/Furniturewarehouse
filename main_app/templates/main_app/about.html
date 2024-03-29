@@ -1,0 +1,34 @@
+{% extends "./base.html" %}
+{% block title %}About Us - Furniture Warehouse{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>
+
+        Cosmos Furniture Warehouse opened its doors to the public in 2002 with 5 strategically placed locations across Canada, planting roots in Calgary, Edmonton, Winnipeg, Ottawa, and St. John’s.
+        
+        Cosmos Furniture quickly became a top furniture retailer with the buying power to provide incredible value at a warehouse price! Our concept is simple; use a low overhead warehouse and offer quality brand name furniture and mattresses, purchased direct from the factory at deep discounts and pass the savings on to the customers. This strategy has provided customers with sofas, loveseats, sectionals, motion furniture, recliners, coffee tables, lamps, TV stands, area rugs, bedrooms, mattresses, dinettes, bunk beds, accent furniture and much more at unbeatable low prices.
+        
+        With this strong focus, along with great customer service and Same Day Delivery, the dedicated employees of Surplus Furniture and Mattress Warehouse set their sights on growth. Surplus Furniture began to expand to other provinces with locations in New Brunswick, Nova Scotia, PEI and Saskatchewan while continuing to add locations in Alberta, Manitoba, Ontario and Newfoundland.
+        </p>
+    <p>Resize the browser window to see that this page is responsive, by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="{% static 'main_app/img/showroom/jay.jpg' %}" alt="Jane" style="width:100%">
+            <div class="container">
+                <h2>Jamaldeen Abdulazeez</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Lawal.djamal68@yahoo.com.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
